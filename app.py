@@ -12,6 +12,7 @@ open_ports = []
 
 while True:
     ip_add_entered = st.text_input("\nPlease enter the ip address that you want to scan: ")
+if(st.button("Submit")):     
     try:
         ip_address_obj = ipaddress.ip_address(ip_add_entered)
         st.write("You entered a valid ip address.")
